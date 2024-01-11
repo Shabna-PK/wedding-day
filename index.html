@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .bg, .bg1,.bg3, .bg4, .bg5, .bg6 {
+      width: 100%;
+      min-height: 100%;
+      
+      background-repeat: no-repeat;
+      background-size:cover;
+    }
+
+    .bg {
+      background-image: url('wed.png');
+     
+    }
+
+    .bg1 {
+      background-image: url('wed 1.jpg');
+      
+    }
+
+    
+    .bg3 {
+      background-image: url('wed4.png');
+    }
+    .bg4 {
+      background-image: url('wed5.png');
+    }
+    .bg5 {
+      background-image: url('wed6.png');
+    }
+    .bg6 {
+      background-image: url('wed7.png');
+      margin-top: -21px;
+      padding-top: 9rem;
+      
+    }
+
+  
+    button {
+      background: transparent;
+      color: rgb(236, 253, 249);
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      margin: 10px;
+      margin-top: 20rem;
+      border: 2px solid #3eff37;
+    }
+
+    button.active {
+      background-color: yellow;
+      border: 2px solid yellow;
+      color: black;
+    }
+
+    .details {
+      display: none;
+      max-width: 400px;
+      margin: 10px auto;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(54, 46, 46, 0.1);
+      position: relative;
+    }
+
+    .details.active {
+      display: block;
+    }
+
+    .details.active::before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      margin-left: -10px;
+      border-width: 10px 10px 0;
+      border-style: solid;
+      border-color: #fff transparent transparent transparent;
+    }
+    
+
+
+    .details2.active {
+      border-color: yellow;
+      
+    }
+
+    .details2.active::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      margin-left: -10px;
+      border-width: 10px 10px 0;
+      border-style: solid;
+      border-color: yellow transparent transparent transparent;
+      
+    }
+
+    .details strong {
+      color: #4CAF50;
+    }
+    /* Reset some default styles for consistency */
+    .bg4 button{
+      margin-left: 120px;
+      margin-top: 22rem;
+    }
+    @media (max-width: 768px) {
+      .bg, .bg1, .bg3, .bg4, .bg5, .bg6 {
+        min-height: 50%;
+        width: 100%;
+        height: auto;
+      }
+    }
+    @media (max-width: 400px) {
+      .bg, .bg1, .bg3, .bg4, .bg5, .bg6 {
+        min-height: 30%;
+        
+        height: auto;
+      }
+      
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg"></div>
+  <div class="bg1">
+
+  <button onclick="toggleDetails('groom')" id="groomButton">Click Groom Details</button>
+  <button onclick="toggleDetails('bride')" id="brideButton">Click Bride Details</button>
+
+  <div id="groomDetails" class="details details2">
+    <strong style="color: rgb(75, 4, 39);font-style: italic;">MUHAMMED AFSAL</strong><br>
+    Mr. Alavikkutty (Said)  <br> Mrs. Safiya Said <br>
+    Thirundikkal (H) Munnurcode
+  </div>
+  <div id="brideDetails" class="details details1">
+    <strong style="color: rgb(75, 4, 39);font-style: italic;">SAFEELA NISRIN</strong><br> 
+    Mr. Muhammed Sirajudheen <br> Mrs. Seenath <br>
+    Neerani (H) Kacherikunnu, Cherpulassery
+  </div>
+  <marquee style="color: rgb(255, 253, 253);margin-top: 100px;font-style: italic;color: #c9ff06;"> WE ARE GETTING MARRIED ON JANUARY 14 2024</marquee>
+
+  
+  </div>
+  <div class="bg3"></div>
+
+
+
+
+  
+  <div class="bg4" >
+    <button  onclick="toggle('nikkah')" id="nikkahButton">Click Nikkah Details</button>
+    <div id="nikkahDetails" class="details details2">
+      <strong style="color: rgb(75, 4, 39);font-style: italic;;">Nikkah Day</strong><br>
+      12 JANUARY, 2024<br>
+      Friday  09:00AM
+    </div>
+  </div>
+
+  <div class="bg5">
+    <!-- Replace "YOUR_GOOGLE_MAPS_EMBED_URL" with the actual embed URL from Google Maps -->
+    <iframe width="390" height="450"  frameborder="0" style="border:0" allowfullscreen
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250747.51728560345!2d76.05083068525613!3d10.892927743791267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7da149382d023%3A0x66391880590c1c3e!2sDhelna%20Hall!5e0!3m2!1sen!2sin!4v1704949568744!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <h3 style="color: #4CAF50; margin-left: 120px;">SAVE THE DATE</h3>
+    <H5 style="color: #c9ff06;margin-left: 45px; ">SUNDAY,JANUARY 14 TH 2024 | 11:00 AM TO 2:00PM<BR>
+    <span style="margin-left: 75px;">At Dhelna Convention Center </span></H5>
+  </div>
+  
+  <div class="bg6"></div>
+
+  <script>
+    function toggleDetails(person) {
+      var groomDetails = document.getElementById('groomDetails');
+      var brideDetails = document.getElementById('brideDetails');
+      var groomButton = document.getElementById('groomButton');
+      var brideButton = document.getElementById('brideButton');
+
+      if (person === 'groom') {
+        groomDetails.classList.add('active');
+        brideDetails.classList.remove('active');
+        groomButton.classList.add('active');
+        brideButton.classList.remove('active');
+      } else if (person === 'bride') {
+        groomDetails.classList.remove('active');
+        brideDetails.classList.add('active');
+        groomButton.classList.remove('active');
+        brideButton.classList.add('active');
+      }
+    }
+    function toggle(section) {
+        var detailsElement = document.getElementById(section + 'Details');
+        if (detailsElement.style.display === 'none') {
+            detailsElement.style.display = 'block';
+        } else {
+            detailsElement.style.display = 'none';
+        }
+    }
+  </script>
+
+</body>
+</html>
